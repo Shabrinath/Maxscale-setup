@@ -45,9 +45,9 @@ This guide covers the steps to manually install, configure, and test MaxScale fo
     GRANT SHOW DATABASES ON *.* TO 'maxscaleuser'@'%';
     GRANT REPLICATION CLIENT ON *.* TO 'maxscaleuser'@'%';
     #execute below 3 queries if you face auth error: 
-      GRANT SLAVE MONITOR ON *.* TO 'maxscaleuser'@'%';
-	    GRANT REPLICATION CLIENT ON *.* TO 'maxscaleuser'@'%';
-	    GRANT SUPER ON *.* TO 'maxscaleuser'@'%';
+    GRANT SLAVE MONITOR ON *.* TO 'maxscaleuser'@'%';
+    GRANT REPLICATION CLIENT ON *.* TO 'maxscaleuser'@'%';
+    GRANT SUPER ON *.* TO 'maxscaleuser'@'%';
 
 
     -- For MariaDB 10.2.2 to 10.2.10
@@ -169,4 +169,4 @@ You can now test MaxScale by connecting to the MariaDB nodes through the MaxScal
    | server2    |
    +------------+
 ## Step 5: Access Maxscale GUI
-Can you access Maxscale GUI on port 8989. 
+We can access Maxscale GUI on port 8989. 
